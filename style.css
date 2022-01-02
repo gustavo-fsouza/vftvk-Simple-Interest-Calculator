@@ -1,15 +1,46 @@
-body {background-color:white;}
-h1{color:darkgrey;}
+body {
+    background-color:black;
+
+}
+
+h1{
+    color:darkgrey;
+
+}
 
 label {
     display: inline-block;
     float: left;
     clear: left;
-    width: 10%;
+    width: 20%;
     text-align: left;
+}
+
+#all {
+    border-radius: 25px;
+    background: white;
+    padding: 20px;
+    width: 50%;
+}
+
+#DivContainer {
+    width: 30%;
+    left: 50px;
+}
+
+.footer {
+
+    position: absolute;
+    color: black;
+    text-align: center;
 }
 
 input {
     display: inline-block;
     float: left;
+}
+
+button {
+    margin-top: 10%;
+    
 }

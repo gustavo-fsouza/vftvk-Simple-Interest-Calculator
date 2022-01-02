@@ -6,12 +6,13 @@ function compute() {
 
     if (capital == "") {
         alert("Please fill the amount field with a number")
-        capital.focus();
+        // destaca o elemento para o usuário
+        document.getElementById("capital").focus();
         return false;
     }
     else if (years == "") {
         alert("Please fill the years field with a number")
-        years.focus();
+        document.getElementById("years").focus();
         return false;
     }
     else {
@@ -38,10 +39,12 @@ function compute() {
             + "at an Interest rate of " + rate + "%</br>"
             + "You will receive an amount of " + amount + "</br>"
             + "in the year " + years + "</p>";
+
         // criando vasriavel container para dizer onde quero que as divs sejam incluidas no html
         const DivContainer = document.getElementById("DivContainer")
         // adicionando essa div no body do documento
         // document.body.appendChild(NewDiv);
+        // adicionando a div apos o divcontainer
         DivContainer.appendChild(NewDiv)
     }
     
